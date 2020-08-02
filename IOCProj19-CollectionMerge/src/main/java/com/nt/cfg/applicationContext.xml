@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-merge="true">
+<bean id="b1st" class="com.nt.bean.EnggCourse">
+<property name="subject">
+<set>
+<value>Math</value>
+<value>fundamental</value>
+<value>English</value>
+<value>Hindi</value>
+</set>
+</property>
+</bean>
+<bean id="sdyr" class="com.nt.bean.EnggCourse" parent="b1st">
+<property name="subject">
+<set>
+<value>EDC</value>
+<value>PDV</value>
+</set>
+</property>
+</bean>
+</beans>
